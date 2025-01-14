@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mountains of Christmas", sans-serif;
+}
+.all-content {
+  background: #ffe75c;
+}
+/* Navbar */
+.navbar {
+  background-color: #ffe75c;
+  padding-left: 60px;
+  font-weight: bold;
+}
+#logo {
+  font-size: 23px;
+  color: cornflowerblue;
+}
+#logo img {
+  margin-bottom: 15px;
+}
+.navbar-nav {
+  margin-left: 10px;
+}
+.nav-link {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px teal;
+  margin-left: 15px;
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  background-color: rgba(186, 208, 238);
+  color: yellow;
+  border-radius: 5px;
+}
+.icons {
+  margin-left: 30px;
+}
+.icons img {
+  margin-left: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.icons img:hover {
+  transform: translateY(-5px);
+}
+#collapsibleNavbar {
+  display: none;
+}
+@media screen and (max-width: 330px) {
+  #logo {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  #collapsibleNavbar {
+    display: block;
+  }
+}
+/* Navbar End */
+
+/* home section */
+.home {
+  width: 100%;
+  height: 88.5vh;
+  display: flex;
+  background-image: linear-gradient(rgba(255, 99, 71, 0), rgba(255, 99, 71, 0)), url(img/background1.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+.home .content {
+  flex: 1 1 400px;
+  margin-left: 60px;
+}
+.content h3 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px blue;
+}
+.content h2 {
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px blue;
+  font-weight: bold;
+}
+.changecontent::after {
+  content: " ";
+  color: rgba(64, 98, 131);
+  animation: changetext 10s infinite linear;
+  font-weight: bold;
+}
+.content p {
+  color: goldenrod;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px midnightblue;
+}
+.content .btn {
+  width: 110px;
+  height: 38px;
+  background-color: #bd9e14;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .content h3 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .home {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 560px) {
+  .home {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 330px) {
+  .content h2 {
+    font-size: 30px;
+  }
+  .content h3 {
+    font-size: 30px;
+  }
+}
+/* home section end */
+
+/* product cards */
+#product-cards h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: rgb(68, 122, 173);
+  text-shadow: 1px 1px 1px black;
+}
+#product-cards .card {
+  background-color: rgb(82, 104, 128);
+  box-shadow: 0 0 3px yellow;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0;
+  width: 70px;
+}
+#product-cards .card:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s ease;
+}
+.overlay i img {
+  background-color: #fcf831;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  padding: 7px;
+  margin: -20%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.overlay .btn-secondary {
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+#product-cards h3 {
+  color: rgb(255, 210, 63);
+  text-shadow: 1px 1px 1px yellow;
+}
+.star .checked {
+  color: yellow;
+}
+#product-cards p {
+  color: #5ec5b4;
+  font-weight: bold;
+}
+#product-cards h6 {
+  font-size: 20px;
+  color: #fffc2d;
+  font-weight: bold;
+}
+#product-cards h6 span button {
+  width: 100px;
+  height: 26px;
+  font-size: 15px;
+  background: transparent;
+  letter-spacing: 3px;
+  border: 2px solid #8cd3c1;
+  border-radius: 5px;
+  float: right;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#product-cards h6 span button:hover {
+  background-color: #61c7c7;
+  color: lightyellow;
+}
+
+/* product cards end */
+
+/* gallery */
+#gallery h1 {
+  margin-top: 100px;
+  text-shadow: 1px 1px 1px black;
+}
+#gallery .card img {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#gallery .card img:hover {
+  transform: translateY(-10px);
+}
+/* gallery */
+
+/* about us */
+#about h1 {
+  margin-top: 100px;
+  text-shadow: 1px 1px 1px black;
+}
+/* about us end */
+
+/* contact */
+#contact {
+  margin-top: 50px;
+}
+#contact h1 {
+  color: #4655ad;
+  text-shadow: 0px 0px 1px lightskyblue;
+}
+#contact .card {
+  height: 80px;
+  margin-top: 20px;
+  box-shadow: rgba(105, 212, 255, 0.2) 0px 7px 29px 0px;
+}
+#contact .card i {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #ffeb3a;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+#contact .card h6 {
+  margin-left: 10px;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #1dbfff;
+}
+
+/* contact */
+#contact {
+  margin-top: 100px;
+}
+#contact h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  color: rgb(68, 122, 173);
+  text-shadow: 1px 1px 1px black;
+}
+#contact input {
+  background-color: rgb(0, 84, 97);
+}
+#contact input::placeholder {
+  color: gold;
+}
+#contact textarea {
+  background-color: rgb(0, 84, 97);
+}
+#contact textarea::placeholder {
+  color: gold;
+}
+#messagebtn {
+  text-align: center;
+}
+#messagebtn button {
+  width: 200px;
+  height: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid lightseagreen;
+  color: lightslategrey;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#messagebtn button:hover {
+  background-color: rgb(6, 54, 82);
+}
+/* contact */
+
+/* footer */
+#footer {
+  background-color: darkgoldenrod;
+  padding: 30px 0;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.copyright {
+  color: palegoldenrod;
+}
+/* footer end */
+
+html {
+  scroll-behavior: smooth;
+}
